@@ -5,7 +5,7 @@ body, html {
 }
 
 .background-container {
-    background-image: url('images/map2.png'); 
+    background-image: url('images/map.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

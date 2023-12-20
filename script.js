@@ -1,4 +1,5 @@
 function searchCountry() {
+
     var search = document.getElementById("search").value;
     var url = `https://restcountries.com/v3.1/name/${search}`;
 
@@ -6,13 +7,16 @@ function searchCountry() {
         .then(res => res.json())
         .then(data => displayCountryData(data))
         .catch(error => console.error('Error:', error));
+        
 }
 
 function displayCountryData(data) {
+
     var countryDataDisplay = document.getElementById("displayContainer");
     countryDataDisplay.innerHTML = "";
 
     if (data.length > 0) {
+
         var country = data[0];
 
         var flagImage = document.createElement("img");
@@ -45,6 +49,7 @@ function displayCountryData(data) {
         countryDataDisplay.appendChild(languageParagraph);
         countryDataDisplay.appendChild(landAreaParagraph);
         countryDataDisplay.appendChild(moreDetailsLink);
+
     } else {
         var notFoundParagraph = document.createElement("p");
         notFoundParagraph.textContent = "Country not found.";
