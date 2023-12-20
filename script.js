@@ -30,8 +30,8 @@ function displayCountryData(data) {
         var populationParagraph = document.createElement("p");
         populationParagraph.textContent = "POPULATION: " + country.population;
 
-        var languageParagraph = document.createElement("p");
-        languageParagraph.textContent = "LANGUAGE: " + country.languages[0];
+        var continentParagraph = document.createElement("p");
+        continentParagraph.textContent = "CONTINENT: " + country.continents[0];
 
         var landAreaParagraph = document.createElement("p");
         landAreaParagraph.textContent = "LAND AREA: " + country.area + " square kilometers";
@@ -46,7 +46,7 @@ function displayCountryData(data) {
         countryDataDisplay.appendChild(flagImage);
         countryDataDisplay.appendChild(nameParagraph);
         countryDataDisplay.appendChild(populationParagraph);
-        countryDataDisplay.appendChild(languageParagraph);
+        countryDataDisplay.appendChild(continentParagraph);
         countryDataDisplay.appendChild(landAreaParagraph);
         countryDataDisplay.appendChild(moreDetailsLink);
 
